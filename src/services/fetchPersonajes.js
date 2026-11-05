@@ -8,5 +8,5 @@ export async function descargarCatalogo() {
   }
 
   const contenido = await peticion.json();
-  return contenido.results.slice(0, 8);
+  return contenido.results;
 }
